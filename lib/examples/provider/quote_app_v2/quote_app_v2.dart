@@ -1,3 +1,6 @@
+import 'package:class_examples/examples/provider/quote_app_v2/add_quote.dart';
+import 'package:class_examples/examples/provider/quote_app_v2/quote_list.dart';
+import 'package:class_examples/examples/provider/quote_app_v2/quotes_view.dart';
 import 'package:flutter/material.dart';
 
 class QuoteAppV2 extends StatelessWidget {
@@ -29,54 +32,6 @@ class QuoteAppV2 extends StatelessWidget {
             NavigationDestination(icon: Icon(Icons.list), label: 'List'),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class QuotesView extends StatelessWidget {
-  const QuotesView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        width: 200,
-        height: 200,
-        color: Colors.amberAccent,
-        child: const Center(child: Text('MY app')),
-      ),
-    );
-  }
-}
-
-class AddQuote extends StatelessWidget {
-  const AddQuote({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        width: 200,
-        height: 200,
-        color: Colors.redAccent,
-        child: const Center(child: Text('Add quote')),
-      ),
-    );
-  }
-}
-
-class QuoteList extends StatelessWidget {
-  const QuoteList({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        width: 200,
-        height: 200,
-        color: Colors.blue.shade300,
-        child: const Center(child: Text('Quote List')),
       ),
     );
   }
